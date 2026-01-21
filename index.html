@@ -8,17 +8,25 @@
       href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;700;800&display=swap"
       rel="stylesheet"
     />
+
     <link rel="stylesheet" href="styles.css" />
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
   </head>
   <body>
-    <main class="maintenance-wrapper">
-      <div class="glass-container">
-        <div class="orb orb-1"></div>
-        <div class="orb orb-2"></div>
+    <div class="bg-gradient"></div>
 
-        <div class="content-grid">
-          <div class="animation-section">
+    <div class="particles">
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+    </div>
+
+    <div class="container">
+      <div class="glass-card">
+        <div class="content">
+          <div class="icon-section">
             <lottie-player
               src="Under Maintenance.json"
               background="transparent"
@@ -33,21 +41,32 @@
           <div class="text-section">
             <span class="badge">System Update</span>
             <h1 class="title">
-              Oops! site is <br /><span class="highlight"
-                >under maintenance</span
-              >
+              We're Currently<br />
+              <span class="highlight">Under Maintenance</span>
             </h1>
             <p class="description">
-              We're currently tuning our engines to provide you with a smoother
-              experience. We'll be back online shortly!
+              Our team is working hard to bring you an enhanced experience.
+              We'll be back online shortly with exciting improvements!
             </p>
-            <div class="action-area">
-              <a href="#" class="btn-primary">Go Back</a>
-              <footer class="mini-footer">terateksystems.com</footer>
+
+            <div class="progress-container">
+              <div class="progress-label">
+                <span>Progress</span>
+                <span>73%</span>
+              </div>
+              <div class="progress-bar">
+                <div class="progress-fill"></div>
+              </div>
             </div>
+
+            <a href="#" class="btn-primary">
+              <span>Go Back Home</span>
+            </a>
+
+            <div class="footer">terateksystems.com</div>
           </div>
         </div>
       </div>
-    </main>
+    </div>
   </body>
 </html>
